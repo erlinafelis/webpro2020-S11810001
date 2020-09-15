@@ -13,11 +13,11 @@ let account = {
         },
         //3
         getAccountSummary(){
-          let sum = 0;
+          let jumlah = 0;
           this.expenses.forEach((item)=>{
-            sum+=item.amount;
+            jumlah+=item.amount;
           })
-          return `${sum}`;
+          return jumlah;
         }
     };
     //4
@@ -25,4 +25,4 @@ let account = {
     account.addExpenses('Ongkos', 30000);
     account.addExpenses('Beli Tas',98000);
     account.addExpenses('beli aqua',12000);
-    console.log(`Total pengeluaran ${account.name} adalah sebanyak Rp. ${account.getAccountSummary()}`);
+    console.log("Jumlah pengeluaran" + account.name + 'adalah Rp.' + account.getAccountSummary());
