@@ -25,13 +25,29 @@
   
 //IMPLICIT RETURN VALUE
 
-function bunga(nama) {
-   return `Hay ${nama}`;
-}
+// function bunga(nama) {
+//    return `Hay ${nama}`;
+// }
  
-console.log(bunga('mawar')); 
+// console.log(bunga('mawar')); 
 
- //cara singkat
-//  const bunga = (nama) => `Hay ${nama}`;
+//  //cara singkat
+// //  const bunga = (nama) => `Hay ${nama}`;
 
-console.log(bunga('melati'));
+// console.log(bunga('melati'));
+
+
+//Exercise
+//convert to ES6 Syntax
+const yearUntilRetirement = (year,firstName) => {
+  var age=28;
+  var retirement=65-age;
+  if(retirement > 0){
+    console.log(`${firstName} retired in ${retirement} years. `);
+  }
+  else{
+    console.log(`${firstName} has already retired`);
+  }
+}
+yearUntilRetirement(2035,'jhon');
+
