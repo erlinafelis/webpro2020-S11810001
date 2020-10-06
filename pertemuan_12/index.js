@@ -1,78 +1,54 @@
-// Rest & Spread Operator
+/* 
+        arrow function
+                            */
 
-// const hitung = (a,b,c,d,e) => {
-//     const angka =[a,b,c,d,e];
-//     let total=0;
-//     for (let i =0; i<5 ;i++){
-//         total=total +angka [i];
-//     }
-//     return total;
+
+// function ucapkanSalam() {
+// return "Selamat Pagi";
 // };
 
+// fungsi dengan parameter
+// const operasiPenjumlahan = (bilangan1, bilangan2) => {
+//     const hasil =  bilangan1 + bilangan2;
+//     return hasil;
+//   };
+  
+//   console.log(operasiPenjumlahan(12, 4)); 
+  
+  // fungsi yang tidak memiliki parameter
+//   const namaJenisBuah = () => {
+//     const buah = ["apel", "anggur", "jeruk",'melon'];
+//     return buah[Math.floor(Math.random()*(buah.length))];
+//   }
+  
+//   console.log(namaJenisBuah()); 
+  
+//IMPLICIT RETURN VALUE
+
+// function bunga(nama) {
+//    return `Hay ${nama}`;
+// }
+ 
+// console.log(bunga('mawar')); 
+
+//  //cara singkat
+// //  const bunga = (nama) => `Hay ${nama}`;
+
+// console.log(bunga('melati'));
 
 
-//rest bisa di gunakan pada parameter terakhir
-//... di ubah menjadi array
-
-// const hitung =(...angka) => {
-//     let total =0;
-//     angka.forEach((el) =>{
-//         total=total+angka[i];
-//     });
-// return total;
-
-// };
-// console.log(hitung(1,2,3,4,5,6,7,8,9,10));
-
-
-// const hitung =(param1 ,param2, ...params) => {
-//     let total =0;
-//     angka.forEach((el) =>{
-//         total=total+angka[i];
-//     });
-// return total;
-
-//};
-
-//Spread operator 
-
-
-//1.Duplikasi Array
-// const angka = [1,2,3,4,5];
-// const angka2 = [...angka];
-
-// angka[0] = 10;
-// console.log(angka);
-// console.log(angka2);
-
-// console.log(angka);
-// console.log(...angka);
-
-//2.Menggabungkan Array
-// const angka1 =[1,2,3,4,5];
-// const angka2 =[6,7,8,9,10];
-// const angka3 =[12,13];
-
-// const gabung5 =angka1.concat(angka2, angka3);
-// console.log(gabung5);
-
-// const gabung6 = [...angka1,...angka2, 11, ...angka3];
-// console.log(gabung6);
-
-
-let orang={
-    nama:'jhon',
-    umur:33,
-};
-
-//orang.pekerjaan='guru'
-//orang.pendidikan ="s2"
-
-orang ={...orang, pekerjaan: 'guru',pendidikan:'s2'};
-console.log(orang);
-
-const obj1 = {a:1,b:2};
-const obj2 = {c:3,d:4};
-
-const objGabung = {...obj1, ...obj2};
-console.log(objGabung);
+//Exercise
+//convert to ES6 Syntax
+const yearUntilRetirement = (year,firstName) => {
+    var age=28;
+    var retirement=65-age;
+    if(retirement > 0){
+      console.log(`${firstName} retired in ${retirement} years. `);
+    }
+    else{
+      console.log(`${firstName} has already retired`);
+    }
+  }
+  yearUntilRetirement(2035,'jhon');
+  
+  
