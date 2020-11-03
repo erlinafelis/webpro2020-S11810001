@@ -62,7 +62,7 @@
 
 //BAGIAN 2
 //1. 
-// const WarnaKesukaan = (warna='putih') =>{
+// const WarnaKesukaan = (warna='kuning') =>{
 //     return console.log(`Warna kesukaan saya adalah ${warna}`)
 //     }
     
