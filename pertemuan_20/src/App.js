@@ -71,6 +71,8 @@
 // }
 // export default App;
 //pertemuan 25
+
+
 import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
@@ -84,17 +86,17 @@ const App = () =>{
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/home">
+                            <Link to="/Home">
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link to="/login">
+                            <Link to="/Login">
                                 Login
                             </Link>
                         </li>
                         <li>
-                            <Link to="/register">
+                            <Link to="/Register">
                                 Register
                             </Link>
                         </li>
@@ -102,13 +104,13 @@ const App = () =>{
                 </nav>
             </div>
             <Switch>
-                <Route path="/login">
+                <Route path="/Login">
                     <Login />
                 </Route>
-                <Route path="/register">
+                <Route path="/Register">
                     <Register />
                 </Route>
-                <Route path="/home">
+                <Route path="/Home">
                     <Home />
                 </Route>
             </Switch>
